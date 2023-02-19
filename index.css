@@ -31,6 +31,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: var(--padding-container);
 }
 
 .nav__container {
@@ -50,14 +51,21 @@ body {
 
 .hero {
   background-color: var(--dark-violet);
-  color: white;
 }
 
-.hero__main ::before {
-content: "";
-background-image: url("./images/image-intro-mobile.jpg");
-display: block;
-height: 370px;
-background-size: cover;
-background-position: center;
+.hero__main {
+  width: 100%;
+}
+.hero__main::before {
+  content: "";
+  background-image: url("./images/image-intro-mobile.jpg");
+  display: block;
+  height: 370px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__texts {
+  color: white;
+
 }
