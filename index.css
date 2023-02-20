@@ -40,6 +40,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  position: relative;
 }
 
 .nav__links {
@@ -54,18 +55,27 @@ body {
 .hero {
   background-color: var(--dark-violet);
   /* padding: 0; */
+  position: relative;
 }
 
 .hero__main {
   width: 100%;
   --padding-container: 0;
+  position: relative;
+}
+.hero__background--mobile {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
 }
 
 .hero__main::before {
   content: "";
   background-image: url("./images/image-intro-mobile.jpg");
   display: block;
-  height: 370px;
+  height: 820px;
   background-size: cover;
   background-position: center;
 }
@@ -154,7 +164,8 @@ body {
 
 .find {
   padding: 80px 0;
-  --padding-container: 50px 40px;
+  --padding-container: 100px 40px;
+  position: relative;
 }
 
 .find__container {
@@ -165,6 +176,8 @@ body {
 
 .footer {
   background-color: var(--very-light-gray);
+  padding: 100px;
+  position: relative;
 }
 
 .footer__brand {
@@ -207,4 +220,262 @@ body {
 .footer__link--first {
   color: var(--dark-grayish-violet);
   margin-bottom: 1rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 315px;
+  left: 0;
+  background-size: auto;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-pattern-intro-left-mobile.svg");
+}
+
+.hero::after {
+  background-image: url("./images/bg-pattern-intro-right-mobile.svg");
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 95%;
+  top: 740px;
+  right: 0;
+  background-size: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.find__container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 5px;
+  right: 30px;
+  background-size: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url("./images/bg-pattern-footer-mobile.svg");
+}
+
+@media (min-width: 768px) {
+  .nav__links {
+    display: block;
+  }
+
+  .nav__hamburger {
+    display: none;
+  }
+
+  .nav__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    color: var(--dark-grayish-violet);
+  }
+
+  .nav__link--cta {
+    border: 1px solid;
+    color: var(--dark-violet);
+    padding: 0.8rem 2rem;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+      to bottom,
+      var(--dark-violet) 80%,
+      #fff 80%
+    );
+    position: relative;
+  }
+  .hero__main {
+    display: flex;
+    width: 90%;
+    --padding-container: 100px 0;
+    justify-content: space10between;
+    align-items: flex-start;
+  }
+
+  .hero__main::before {
+    width: 48%;
+    background-image: url("./images/image-intro-desktop.jpg");
+    order: 1;
+
+    height: 500px;
+  }
+  .hero::after {
+    background-image: url("./images/bg-pattern-intro-right-desktop.svg");
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 95%;
+    top: 0;
+    right: -10;
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .hero__texts {
+    position: relative;
+    color: white;
+    width: 50%;
+    margin: 0;
+    padding: 20px 0;
+    text-align: left;
+  }
+
+  .hero__texts::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: var(--very-light-gray);
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .different {
+    text-align: left;
+  }
+
+  /* .title--different {
+    position: relative;
+    padding-top: 10px;
+  } */
+
+  .title--different::before {
+    margin: 0;
+  }
+
+  .different__items {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .different__item {
+    flex: 1;
+  }
+
+  .different__icon {
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 2.1rem;
+    font-family: var(--dm);
+    letter-spacing: 2px;
+  }
+
+  .different__title {
+    font-size: 1.5rem;
+    font-family: var(--dm);
+    letter-spacing: 2px;
+  }
+
+  .different__paragraph {
+    color: var(--dark-grayish-violet);
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 320px;
+    left: 0;
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+  }
+
+  .find__container::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-position: left;
+    background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+  }
+
+  .find__container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--dark-grayish-violet);
+    margin-bottom: 2.5rem; */
+  }
+
+  .footer__navigation {
+    gap: 1.5rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer__nav {
+    width: 20%;
+    align-items: flex-start;
+  }
+
+  .footer {
+    padding-top: 50px;
+    position: relative;
+  }
+
+  .footer__container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .footer::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-pattern-footer-desktop.svg");
+  }
 }
