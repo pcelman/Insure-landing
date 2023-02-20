@@ -23,10 +23,10 @@ body {
 .nav {
   background-color: white;
   height: 70px;
-  --padding-container:0;
+  --padding-container: 0;
 }
 
-.container  {
+.container {
   margin: 0 auto;
   overflow: hidden;
   width: 90%;
@@ -46,7 +46,8 @@ body {
   display: none;
 }
 
-.nav__icon, .nav__img {
+.nav__icon,
+.nav__img {
   display: block;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .hero__main {
   width: 100%;
---padding-container:0; 
+  --padding-container: 0;
 }
 
 .hero__main::before {
@@ -71,10 +72,10 @@ body {
 
 .hero__texts {
   color: white;
-width: 90%;
-margin: 0 auto;
-padding: 80px 0;
-text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
 }
 
 .hero__title {
@@ -84,8 +85,8 @@ text-align: center;
 }
 
 .hero__paragraph {
-line-height: 1.5;
-margin-top: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
 .cta {
@@ -94,13 +95,12 @@ margin-top: 1rem;
   color: white;
   text-decoration: none;
   border: 1px solid;
-  padding: .8rem 2rem;
-text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
 }
 
 .different {
   text-align: center;
-
 }
 
 .title--different {
@@ -153,14 +153,58 @@ text-transform: uppercase;
 }
 
 .find {
- 
   padding: 80px 0;
   --padding-container: 50px 40px;
-
 }
 
 .find__container {
   background-color: var(--dark-violet);
   color: white;
   text-align: center;
+}
+
+.footer {
+  background-color: var(--very-light-gray);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--dark-grayish-violet);
+  margin-bottom: 2.5rem;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__navigation {
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--dark-violet);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__link--first {
+  color: var(--dark-grayish-violet);
+  margin-bottom: 1rem;
 }
