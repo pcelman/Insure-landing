@@ -3,7 +3,7 @@ Frontend Mentor Challenge
 
 [Visit the website](https://huddle-pcv.vercel.app/)
 
-<img width="1064" alt="Screenshot 2023-02-17 at 19 54 16" src="https://user-images.githubusercontent.com/100241036/219812671-dae415f2-0a4f-439e-9776-2ab0089a5af2.png">
+<img width="1052" alt="Screenshot 2023-02-20 at 13 53 11" src="https://user-images.githubusercontent.com/100241036/220164057-6d3742bf-3e2f-46a8-8192-725cd5ae2f66.png">
 
 # Flexbox Responsive Layout
 
