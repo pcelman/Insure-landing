@@ -28,19 +28,18 @@ body {
 
 .container {
   margin: 0 auto;
-  overflow: hidden;
+  padding: var(--padding-container);
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--padding-container);
+  overflow: hidden;
 }
 
 .nav__container {
+  position: relative;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
-  position: relative;
 }
 
 .nav__links {
@@ -65,26 +64,26 @@ body {
 }
 .hero__background--mobile {
   position: absolute;
-  background-size: cover;
-  background-position: center;
   top: 0;
   left: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__main::before {
+  height: 820px;
+  display: block;
   content: "";
   background-image: url("./images/image-intro-mobile.jpg");
-  display: block;
-  height: 820px;
   background-size: cover;
   background-position: center;
 }
 
 .hero__texts {
-  color: white;
-  width: 90%;
   margin: 0 auto;
   padding: 80px 0;
+  width: 90%;
+  color: white;
   text-align: center;
 }
 
@@ -95,17 +94,17 @@ body {
 }
 
 .hero__paragraph {
-  line-height: 1.5;
   margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .cta {
-  display: inline-block;
   margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  display: inline-block;
   color: white;
   text-decoration: none;
   border: 1px solid;
-  padding: 0.8rem 2rem;
   text-transform: uppercase;
 }
 
@@ -119,22 +118,22 @@ body {
 }
 
 .title--different::before {
-  content: "";
   position: absolute;
+  margin: 0 auto;
   top: -15px;
   left: 0;
   right: 0;
-  margin: 0 auto;
   width: 30%;
   height: 2px;
+  content: "";
   background-color: var(--dark-grayish-violet);
 }
 
 .different__items {
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  margin-top: 3.5rem;
 }
 
 .different__icon {
@@ -157,15 +156,15 @@ body {
 }
 
 .different__paragraph {
+  margin-top: 1rem;
   color: var(--dark-grayish-violet);
   line-height: 1.5;
-  margin-top: 1rem;
 }
 
 .find {
+  position: relative;
   padding: 80px 0;
   --padding-container: 100px 40px;
-  position: relative;
 }
 
 .find__container {
@@ -175,19 +174,19 @@ body {
 }
 
 .footer {
-  background-color: var(--very-light-gray);
   padding: 100px;
   position: relative;
+  background-color: var(--very-light-gray);
 }
 
 .footer__brand {
   display: flex;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--dark-grayish-violet);
-  margin-bottom: 2.5rem;
 }
 
 .footer__contact {
@@ -218,17 +217,17 @@ body {
 }
 
 .footer__link--first {
-  color: var(--dark-grayish-violet);
   margin-bottom: 1rem;
+  color: var(--dark-grayish-violet);
 }
 
 .hero::before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 315px;
   left: 0;
+  content: "";
   background-size: auto;
   background-position: left;
   background-repeat: no-repeat;
@@ -236,37 +235,37 @@ body {
 }
 
 .hero::after {
-  background-image: url("./images/bg-pattern-intro-right-mobile.svg");
-  content: "";
   position: absolute;
   width: 105%;
   height: 95%;
   top: 740px;
   right: 0;
+  content: "";
+  background-image: url("./images/bg-pattern-intro-right-mobile.svg");
   background-size: auto;
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .find__container::before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 90%;
   top: 5px;
   right: 30px;
+  content: "";
   background-size: auto;
   background-position: right;
   background-repeat: no-repeat;
   background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
 }
 .footer::before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  content: "";
   background-repeat: no-repeat;
   background-size: auto;
   background-image: url("./images/bg-pattern-footer-mobile.svg");
@@ -293,22 +292,22 @@ body {
   }
 
   .nav__link--cta {
+    padding: 0.8rem 2rem;
     border: 1px solid;
     color: var(--dark-violet);
-    padding: 0.8rem 2rem;
   }
 
   .hero {
+    position: relative;
     background-image: linear-gradient(
       to bottom,
       var(--dark-violet) 80%,
       #fff 80%
     );
-    position: relative;
   }
   .hero__main {
-    display: flex;
     width: 90%;
+    display: flex;
     --padding-container: 100px 0;
     justify-content: space10between;
     align-items: flex-start;
@@ -318,9 +317,9 @@ body {
     width: 48%;
     background-image: url("./images/image-intro-desktop.jpg");
     order: 1;
-
     height: 500px;
   }
+
   .hero::after {
     background-image: url("./images/bg-pattern-intro-right-desktop.svg");
     content: "";
@@ -469,12 +468,12 @@ body {
   }
 
   .footer::before {
-    content: "";
     position: absolute;
     width: 35%;
     height: 80%;
     top: 0;
     left: 0;
+    content: "";
     background-repeat: no-repeat;
     background-image: url("./images/bg-pattern-footer-desktop.svg");
   }
