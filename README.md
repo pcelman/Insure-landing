@@ -1,7 +1,7 @@
 ##  Insure landing page 
 Frontend Mentor Challenge
 
-[Visit the website](https://huddle-pcv.vercel.app/)
+[Visit the website](https://insure-pcv.vercel.app/)
 
 <img width="1052" alt="Screenshot 2023-02-20 at 13 53 11" src="https://user-images.githubusercontent.com/100241036/220164057-6d3742bf-3e2f-46a8-8192-725cd5ae2f66.png">
 
